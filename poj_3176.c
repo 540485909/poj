@@ -27,6 +27,7 @@ int main()
 			dp[i][j] = matrix[i][j] + max(dp[i + 1][j], dp[i + 1][j + 1]);
 		}
 	}
+	
 	cout << dp[0][0] << endl;
 #ifndef ONLINE_JUDGE
 	fclose(stdout);
